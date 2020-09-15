@@ -78,8 +78,8 @@ def solve(board):
         y, x = pos
     
     for num in numbers: # Attempts to put a number 1-9 into a square
-        if valid(board, i, (y, x)):
-            board[y][x] = i
+        if valid(board, num, (y, x)):
+            board[y][x] = num
             
             if solve(board):
                 return True
