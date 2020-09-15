@@ -77,7 +77,7 @@ def solve(board):
     else: # Sets the coordinates of the next empty square
         y, x = pos
     
-    for i in range(1,10): # Attempts to put a number 1-9 into a square
+    for num in numbers: # Attempts to put a number 1-9 into a square
         if valid(board, i, (y, x)):
             board[y][x] = i
             
